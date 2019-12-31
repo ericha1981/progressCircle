@@ -12,26 +12,26 @@ const progressCircleLbl04 = document.querySelector("#timer-text-4");
 const progressCircleLbl05 = document.querySelector("#timer-text-5");
 const progressCircleLbl06 = document.querySelector("#timer-text-6");
 
-const startButton1 = document.querySelector("#btnStart-1");
-const startButton2 = document.querySelector("#btnStart-2");
-const startButton3 = document.querySelector("#btnStart-3");
-const startButton4 = document.querySelector("#btnStart-4");
-const startButton5 = document.querySelector("#btnStart-5");
-const startButton6 = document.querySelector("#btnStart-6");
+// const startButton1 = document.querySelector("#btnStart-1");
+// const startButton2 = document.querySelector("#btnStart-2");
+// const startButton3 = document.querySelector("#btnStart-3");
+// const startButton4 = document.querySelector("#btnStart-4");
+// const startButton5 = document.querySelector("#btnStart-5");
+// const startButton6 = document.querySelector("#btnStart-6");
 
-const pauseButton1 = document.querySelector("#btnPause-1");
-const pauseButton2 = document.querySelector("#btnPause-2");
-const pauseButton3 = document.querySelector("#btnPause-3");
-const pauseButton4 = document.querySelector("#btnPause-4");
-const pauseButton5 = document.querySelector("#btnPause-5");
-const pauseButton6 = document.querySelector("#btnPause-6");
+// const pauseButton1 = document.querySelector("#btnPause-1");
+// const pauseButton2 = document.querySelector("#btnPause-2");
+// const pauseButton3 = document.querySelector("#btnPause-3");
+// const pauseButton4 = document.querySelector("#btnPause-4");
+// const pauseButton5 = document.querySelector("#btnPause-5");
+// const pauseButton6 = document.querySelector("#btnPause-6");
 
 // variables
 const interval = 0;
 const timeRemaining = 0;
 
 // Create a class instance.
-const timer = new Timer(startButton1, pauseButton1, 1000, progressCircle01, progressCircleLbl01, {
+const timer = new Timer(600, progressCircle01, progressCircleLbl01, {
     onStart() {
         console.log("Timer started...");
     },
@@ -44,7 +44,7 @@ const timer = new Timer(startButton1, pauseButton1, 1000, progressCircle01, prog
     }
 });
 
-const timer2 = new Timer(startButton2, pauseButton2, 2000, progressCircle02, progressCircleLbl02, {
+const timer2 = new Timer(800, progressCircle02, progressCircleLbl02, {
     onStart() {
         console.log("Timer started...");
     },
@@ -57,7 +57,7 @@ const timer2 = new Timer(startButton2, pauseButton2, 2000, progressCircle02, pro
     }
 });
 
-const timer3 = new Timer(startButton3, pauseButton3, 1500, progressCircle03, progressCircleLbl03, {
+const timer3 = new Timer(1000, progressCircle03, progressCircleLbl03, {
     onStart() {
         console.log("Timer started...");
     },
@@ -70,7 +70,7 @@ const timer3 = new Timer(startButton3, pauseButton3, 1500, progressCircle03, pro
     }
 });
 
-const timer4 = new Timer(startButton4, pauseButton4, 600, progressCircle04, progressCircleLbl04, {
+const timer4 = new Timer(1200, progressCircle04, progressCircleLbl04, {
     onStart() {
         console.log("Timer started...");
     },
@@ -83,7 +83,7 @@ const timer4 = new Timer(startButton4, pauseButton4, 600, progressCircle04, prog
     }
 });
 
-const timer5 = new Timer(startButton5, pauseButton5, 800, progressCircle05, progressCircleLbl05, {
+const timer5 = new Timer(1400, progressCircle05, progressCircleLbl05, {
     onStart() {
         console.log("Timer started...");
     },
@@ -96,7 +96,7 @@ const timer5 = new Timer(startButton5, pauseButton5, 800, progressCircle05, prog
     }
 });
 
-const timer6 = new Timer(startButton6, pauseButton6, 1750, progressCircle06, progressCircleLbl06, {
+const timer6 = new Timer(1600, progressCircle06, progressCircleLbl06, {
     onStart() {
         console.log("Timer started...");
     },

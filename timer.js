@@ -1,7 +1,5 @@
 class Timer {
-    constructor(startButton, pauseButton, totalDuration, progressCircle, progressCircleLbl, callbacks) {
-        this.startButton = startButton;
-        this.pauseButton = pauseButton;
+    constructor(totalDuration, progressCircle, progressCircleLbl, callbacks) {
         this.totalDuration = totalDuration;
         this.timeRemaining = this.totalDuration;
         this.progressCircle = progressCircle;
@@ -13,8 +11,8 @@ class Timer {
         this.progressCircle.setAttribute('stroke-dashoffset', -this.perimeter);
         
         // Event listeners
-        this.startButton.addEventListener('click', this.start);
-        this.pauseButton.addEventListener('click', this.pause);
+        // this.startButton.addEventListener('click', this.start);
+        // this.pauseButton.addEventListener('click', this.pause);
 
         if (callbacks) {
             this.onStart = callbacks.onStart;
