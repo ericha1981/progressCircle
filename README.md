@@ -1,3 +1,3 @@
 # progressCircle
 
-![](images/result.png)
+![](images/output.png)
